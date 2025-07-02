@@ -7,7 +7,7 @@ export const WhatsappButton = ({
   text,
   className = ''
 }: WhatsappButtonProps) => {
-  const phoneNumber = '+94727074081';
+  const phoneNumber = '+94777074081';
   const message = "Hello, I'm interested in your alkaline water machine.";
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
   return <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" className={`bg-[#1E3A8A] hover:bg-[#152a66] text-white font-medium py-2 px-6 rounded-full transition-all transform hover:scale-105 flex items-center justify-center ${className}`}>

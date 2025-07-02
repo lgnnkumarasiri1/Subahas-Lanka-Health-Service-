@@ -54,22 +54,24 @@ export const Header = () => {
         </button>
       </div>
       {/* Mobile Navigation */}
-      {isMenuOpen && <div className="md:hidden bg-white shadow-lg absolute top-full left-0 w-full">
-          <div className="container mx-auto px-4 py-4 flex flex-col space-y-4">
-            <a href="#home" className="text-[#1E3A8A] hover:text-[#A2CBFF] font-medium transition-colors" onClick={() => setIsMenuOpen(false)}>
-              Home
-            </a>
-            <a href="#history" className="text-[#1E3A8A] hover:text-[#A2CBFF] font-medium transition-colors" onClick={() => setIsMenuOpen(false)}>
-              Water History
-            </a>
-            <a href="#doctors" className="text-[#1E3A8A] hover:text-[#A2CBFF] font-medium transition-colors" onClick={() => setIsMenuOpen(false)}>
-              Expert Opinions
-            </a>
-            <a href="#testimonials" className="text-[#1E3A8A] hover:text-[#A2CBFF] font-medium transition-colors" onClick={() => setIsMenuOpen(false)}>
-              Educational Videos
-            </a>
-            <WhatsappButton text="Order Now" />
-          </div>
-        </div>}
+{isMenuOpen && (
+  <div className="md:hidden bg-white shadow-lg absolute top-full left-0 w-full">
+    <div className="container mx-auto px-4 py-4 flex flex-col space-y-4">
+      <a href="#home" className="text-[#1E3A8A] hover:text-[#A2CBFF] font-medium transition-colors" onClick={() => setIsMenuOpen(false)}>
+        Home
+      </a>
+      <a href="#history" className="text-[#1E3A8A] hover:text-[#A2CBFF] font-medium transition-colors" onClick={() => setIsMenuOpen(false)}>
+        Water History
+      </a>
+      <a href="#doctors" className="text-[#1E3A8A] hover:text-[#A2CBFF] font-medium transition-colors" onClick={() => setIsMenuOpen(false)}>
+        Expert Opinions
+      </a>
+      <a href="#testimonials" className="text-[#1E3A8A] hover:text-[#A2CBFF] font-medium transition-colors" onClick={() => setIsMenuOpen(false)}>
+        Educational Videos
+      </a>
+      {/* Removed <WhatsappButton /> from mobile */}
+    </div>
+  </div>
+)}
     </header>;
 };
