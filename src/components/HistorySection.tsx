@@ -12,7 +12,7 @@ export const HistorySection = () => {
           </div>
         </AnimatedSection>
         {/* Highlighted intro section */}
-        <AnimatedSection animation="fade-up" delay={200}>
+        <AnimatedSection animation="fade-up" delay={100}>
           <div className="mb-16 p-6 bg-[#1E3A8A]/5 rounded-lg border-l-4 border-[#1E3A8A] shadow-md">
             <p className="text-lg text-[#1E3A8A]">
               <span className="font-semibold">For thousands of years</span>,
