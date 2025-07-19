@@ -145,7 +145,7 @@ export const TestimonialsSection = () => {
                   href="#"
                   onClick={(e) => {
                     e.preventDefault();
-                    const phoneNumber = '+94727074081';
+                    const phoneNumber = '+94777074081';
                     const message = "Hello, I'm interested in your alkaline water machine.";
                     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
                     window.open(whatsappUrl, '_blank');
