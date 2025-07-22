@@ -33,49 +33,49 @@ export const Header = () => {
           {/* Company name next to logo */}
           <div className="ml-3">
             <h1 className="text-xl font-bold text-[#1E3A8A]">
-              <span className="text-[#1E3A8A]">Subahas</span> Lanka Health
-              Service
+              <span className="text-[#1E3A8A]">SUBAHAS</span> LANKA HEALTH
+              SERVICE
             </h1>
           </div>
         </div>
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center space-x-6">
-          <a
-            href="#home"
-            className="text-[#1E3A8A] hover:text-[#A2CBFF] font-medium transition-colors"
-          >
-            Home
-          </a>
-          <a
-            href="#history"
-            className="text-[#1E3A8A] hover:text-[#A2CBFF] font-medium transition-colors"
-          >
-            Water History
-          </a>
-          <a
-            href="#doctors"
-            className="text-[#1E3A8A] hover:text-[#A2CBFF] font-medium transition-colors"
-          >
-            Expert Opinions
-          </a>
-          <a
-            href="#doctor-research"
-            className="text-[#1E3A8A] hover:text-[#A2CBFF] font-medium transition-colors"
-          >
-            Doctor Research
-          </a>
-          <a
-            href="#testimonials"
-            className="text-[#1E3A8A] hover:text-[#A2CBFF] font-medium transition-colors"
-          >
-            Educational Videos
-          </a>
-          <div className="relative">
-            <div className="absolute -inset-1 bg-gradient-to-r from-[#1E3A8A] to-[#A2CBFF] rounded-full opacity-70 animate-pulse"></div>
-            <div className="relative">
-              <WhatsappButton text="Order Now" />
-            </div>
+        <nav className="hidden md:flex items-center">
+          <div className="flex items-center space-x-4 mr-4">
+            <a
+              href="#home"
+              className="text-[#1E3A8A] hover:text-[#A2CBFF] font-medium transition-colors whitespace-nowrap text-sm"
+            >
+              Home
+            </a>
+            <a
+              href="#history"
+              className="text-[#1E3A8A] hover:text-[#A2CBFF] font-medium transition-colors whitespace-nowrap text-sm"
+            >
+              Water History
+            </a>
+            <a
+              href="#doctors"
+              className="text-[#1E3A8A] hover:text-[#A2CBFF] font-medium transition-colors whitespace-nowrap text-sm"
+            >
+              Expert Opinions
+            </a>
+            <a
+              href="#doctor-research"
+              className="text-[#1E3A8A] hover:text-[#A2CBFF] font-medium transition-colors whitespace-nowrap text-sm"
+            >
+              Doctor Research
+            </a>
+            <a
+              href="#testimonials"
+              className="text-[#1E3A8A] hover:text-[#A2CBFF] font-medium transition-colors whitespace-nowrap text-sm"
+            >
+              Educational Videos
+            </a>
           </div>
+          <WhatsappButton
+            text="Order Now"
+            className="font-medium py-1.5 px-4 text-sm whitespace-nowrap"
+          />
         </nav>
         {/* Mobile menu button */}
         <button
